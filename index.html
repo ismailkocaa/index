@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#111827" />
+  <title>Kişisel Bilgilerim</title>
+
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card: #111827;
+      --card-2: #1f2937;
+      --text: #f8fafc;
+      --muted: #94a3b8;
+      --border: rgba(255,255,255,.10);
+      --accent: #38bdf8;
+      --success: #22c55e;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: Arial, Helvetica, sans-serif;
+      background:
+        radial-gradient(circle at top, #1e3a5f 0, transparent 38%),
+        var(--bg);
+      color: var(--text);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 520px;
+    }
+
+    .profile-card {
+      background: rgba(17, 24, 39, .92);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      padding: 28px;
+      box-shadow: 0 20px 60px rgba(0,0,0,.35);
+      backdrop-filter: blur(10px);
+    }
+
+    .avatar {
+      width: 92px;
+      height: 92px;
+      margin: 0 auto 18px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      font-size: 34px;
+      font-weight: bold;
+      background: linear-gradient(135deg, #38bdf8, #6366f1);
+      border: 3px solid rgba(255,255,255,.18);
+    }
+
+    h1 {
+      margin: 0;
+      text-align: center;
+      font-size: 28px;
+    }
+
+    .subtitle {
+      text-align: center;
+      color: var(--muted);
+      margin: 8px 0 24px;
+    }
+
+    .section-title {
+      margin: 24px 0 10px;
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+      color: var(--muted);
+    }
+
+    .link {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+      width: 100%;
+      padding: 15px 16px;
+      margin-bottom: 10px;
+      background: var(--card-2);
+      color: var(--text);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      text-decoration: none;
+      transition: .2s ease;
+    }
+
+    .link:hover {
+      transform: translateY(-2px);
+      border-color: rgba(56,189,248,.5);
+    }
+
+    .label {
+      color: var(--muted);
+      font-size: 12px;
+      margin-bottom: 4px;
+    }
+
+    .value {
+      word-break: break-word;
+      font-size: 15px;
+    }
+
+    .iban-box {
+      background: var(--card-2);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 16px;
+      margin-bottom: 12px;
+    }
+
+    .bank-name {
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+
+    .iban {
+      font-family: Consolas, monospace;
+      font-size: 15px;
+      line-height: 1.6;
+      word-break: break-all;
+    }
+
+    button {
+      width: 100%;
+      margin-top: 12px;
+      border: 0;
+      border-radius: 11px;
+      padding: 11px 14px;
+      background: var(--accent);
+      color: #082f49;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .notice {
+      display: none;
+      margin-top: 10px;
+      color: var(--success);
+      font-size: 13px;
+      text-align: center;
+    }
+
+    footer {
+      margin-top: 22px;
+      color: var(--muted);
+      font-size: 12px;
+      text-align: center;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+
+<body>
+  <main class="container">
+    <section class="profile-card">
+
+      <!-- ismail KOCA -->
+      <div class="avatar">İK</div>
+
+      <!-- Ad Soyad -->
+      <h1>ismail KOCA</h1>
+
+      <div class="subtitle">Kişisel iletişim ve ödeme bilgilerim</div>
+
+<p>📞 Telefon:
+  <a href="Tel:+905314940284">0531 494 02 84</a>
+</p>
+<p>
+        📧 E-posta:
+        <a href="mailto:ismailkocaa@gmail.com">ismailkocaa@gmail.com</a>
+    </p>
+
+      <div class="section-title">Sosyal Ağlar</div>
+
+      <!-- Instagram -->
+      <a class="link" href="https://instagram.com/kocaa.ismail" target="_blank" rel="noopener">
+        <div>
+          <div class="label">Instagram</div>
+          <div class="value">@kocaa.ismail</div>
+        </div>
+        <div>↗</div>
+      </a>
+
+      <!-- X / Twitter -->
+      <a class="link" href="https://x.com/kocaaismail" target="_blank" rel="noopener">
+        <div>
+          <div class="label">X</div>
+          <div class="value">@kocaaismail</div>
+        </div>
+        <div>↗</div>
+      </a>
+
+      <!-- Facebook -->
+      <a class="link" href="https://www.facebook.com/kocaa.ismail" target="_blank" rel="noopener">
+        <div>
+          <div class="label">Facebook</div>
+          <div class="value">kocaa.ismail</div>
+        </div>
+        <div>↗</div>
+      </a>
+
+     
+
+      <div class="section-title">Banka Bilgileri</div>
+
+      <div class="iban-box">
+        <div class="bank-name">Ziraat BANKASI</div>
+        <div class="label">Hesap Sahibi</div>
+        <div class="value">ismail koca</div>
+
+        <div class="label" style="margin-top:12px;">IBAN</div>
+        <div class="iban" id="iban1">TR24 0001 0021 4347 2099 3350 10</div>
+
+        <button type="button" onclick="copyIban('iban1', 'notice1')">
+          IBAN'ı Kopyala
+        </button>
+        <div class="notice" id="notice1">IBAN kopyalandı ✓</div>
+      </div>
+
+        <div class="iban-box">
+        <div class="bank-name">En Para</div>
+        <div class="label">Hesap Sahibi</div>
+        <div class="value">ismail koca</div>
+        <div class="label" style="margin-top:12px;">IBAN</div>
+        <div class="iban" id="iban2">TR28 0015 7000 0000 0064 5305 13</div>
+        <button type="button" onclick="copyIban('iban2', 'notice2')">IBAN'ı Kopyala</button>
+        <div class="notice" id="notice2">IBAN kopyalandı ✓</div>
+      </div>
+  
+
+      <footer class="yanip-son">
+    Bu sayfa sadece bilgilendirme amaçlı kurulmuştur.
+© 1988 İsmail - Tüm Hakları Saklıdır
+</footer>
+
+<style>
+.yanip-son {
+    animation: yanipSon 1s infinite;
+}
+
+@keyframes yanipSon {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+</style>
+
+    </section>
+  </main>
+
+  <script>
+    function copyIban(ibanId, noticeId) {
+      const iban = document.getElementById(ibanId).innerText.replace(/\s/g, "");
+      navigator.clipboard.writeText(iban).then(() => {
+        const notice = document.getElementById(noticeId);
+        notice.style.display = "block";
+        setTimeout(() => notice.style.display = "none", 1800);
+      });
+    }
+  </script>
+</body>
+</html>
