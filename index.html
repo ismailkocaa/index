@@ -1,292 +1,35 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="tr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="theme-color" content="#111827" />
-  <title>Kişisel Bilgilerim</title>
-
-  <style>
-    :root {
-      --bg: #0f172a;
-      --card: #111827;
-      --card-2: #1f2937;
-      --text: #f8fafc;
-      --muted: #94a3b8;
-      --border: rgba(255,255,255,.10);
-      --accent: #38bdf8;
-      --success: #22c55e;
-    }
-
-    * { box-sizing: border-box; }
-
-    body {
-      margin: 0;
-      min-height: 100vh;
-      font-family: Arial, Helvetica, sans-serif;
-      background:
-        radial-gradient(circle at top, #1e3a5f 0, transparent 38%),
-        var(--bg);
-      color: var(--text);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 24px;
-    }
-
-    .container {
-      width: 100%;
-      max-width: 520px;
-    }
-
-    .profile-card {
-      background: rgba(17, 24, 39, .92);
-      border: 1px solid var(--border);
-      border-radius: 24px;
-      padding: 28px;
-      box-shadow: 0 20px 60px rgba(0,0,0,.35);
-      backdrop-filter: blur(10px);
-    }
-
-    .avatar {
-      width: 92px;
-      height: 92px;
-      margin: 0 auto 18px;
-      border-radius: 50%;
-      display: grid;
-      place-items: center;
-      font-size: 34px;
-      font-weight: bold;
-      background: linear-gradient(135deg, #38bdf8, #6366f1);
-      border: 3px solid rgba(255,255,255,.18);
-    }
-
-    h1 {
-      margin: 0;
-      text-align: center;
-      font-size: 28px;
-    }
-
-    .subtitle {
-      text-align: center;
-      color: var(--muted);
-      margin: 8px 0 24px;
-    }
-
-    .section-title {
-      margin: 24px 0 10px;
-      font-size: 13px;
-      text-transform: uppercase;
-      letter-spacing: .08em;
-      color: var(--muted);
-    }
-
-    .link {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 14px;
-      width: 100%;
-      padding: 15px 16px;
-      margin-bottom: 10px;
-      background: var(--card-2);
-      color: var(--text);
-      border: 1px solid var(--border);
-      border-radius: 14px;
-      text-decoration: none;
-      transition: .2s ease;
-    }
-
-    .link:hover {
-      transform: translateY(-2px);
-      border-color: rgba(56,189,248,.5);
-    }
-
-    .label {
-      color: var(--muted);
-      font-size: 12px;
-      margin-bottom: 4px;
-    }
-
-    .value {
-      word-break: break-word;
-      font-size: 15px;
-    }
-
-    .iban-box {
-      background: var(--card-2);
-      border: 1px solid var(--border);
-      border-radius: 14px;
-      padding: 16px;
-      margin-bottom: 12px;
-    }
-
-    .bank-name {
-      font-weight: bold;
-      margin-bottom: 8px;
-    }
-
-    .iban {
-      font-family: Consolas, monospace;
-      font-size: 15px;
-      line-height: 1.6;
-      word-break: break-all;
-    }
-
-    button {
-      width: 100%;
-      margin-top: 12px;
-      border: 0;
-      border-radius: 11px;
-      padding: 11px 14px;
-      background: var(--accent);
-      color: #082f49;
-      font-weight: bold;
-      cursor: pointer;
-    }
-
-    .notice {
-      display: none;
-      margin-top: 10px;
-      color: var(--success);
-      font-size: 13px;
-      text-align: center;
-    }
-
-    footer {
-      margin-top: 22px;
-      color: var(--muted);
-      font-size: 12px;
-      text-align: center;
-      line-height: 1.5;
-    }
-  </style>
-</head>
-
-<body>
-  <main class="container">
-    <section class="profile-card">
-
-      <!-- ismail KOCA -->
-      <div class="avatar">İK</div>
-
-      <!-- Ad Soyad -->
-      <h1>ismail KOCA</h1>
-
-      <div class="subtitle">Kişisel iletişim ve ödeme bilgilerim</div>
-
-<p>📞 Telefon:
-  <a href="Tel:+905314940284">0531 494 02 84</a>
-</p>
-<p>
-        📧 E-posta:
-        <a href="mailto:ismailkocaa@gmail.com">ismailkocaa@gmail.com</a>
-    </p>
-
-      <div class="section-title">Sosyal Ağlar</div>
-
-      <!-- Instagram -->
-      <a class="link" href="https://instagram.com/kocaa.ismail" target="_blank" rel="noopener">
-        <div>
-          <div class="label">Instagram</div>
-          <div class="value">@kocaa.ismail</div>
-        </div>
-        <div>↗</div>
-      </a>
-
-      <!-- X / Twitter -->
-      <a class="link" href="https://x.com/kocaaismail" target="_blank" rel="noopener">
-        <div>
-          <div class="label">X</div>
-          <div class="value">@kocaaismail</div>
-        </div>
-        <div>↗</div>
-      </a>
-
-      <!-- Facebook -->
-      <a class="link" href="https://www.facebook.com/kocaa.ismail" target="_blank" rel="noopener">
-        <div>
-          <div class="label">Facebook</div>
-          <div class="value">kocaa.ismail</div>
-        </div>
-        <div>↗</div>
-      </a>
-
-     
-
-      <div class="section-title">Banka Bilgileri</div>
-
-      <div class="iban-box">
-        <div class="bank-name">Ziraat BANKASI</div>
-        <div class="label">Hesap Sahibi</div>
-        <div class="value">ismail koca</div>
-
-        <div class="label" style="margin-top:12px;">IBAN</div>
-        <div class="iban" id="iban1">TR24 0001 0021 4347 2099 3350 10</div>
-
-        <button type="button" onclick="copyIban('iban1', 'notice1')">
-          IBAN'ı Kopyala
-        </button>
-        <div class="notice" id="notice1">IBAN kopyalandı ✓</div>
-      </div>
-
-        <div class="iban-box">
-        <div class="bank-name">En Para</div>
-        <div class="label">Hesap Sahibi</div>
-        <div class="value">ismail koca</div>
-          
-        <div class="label" style="margin-top:12px;">IBAN</div>
-        <div class="iban" id="iban2">TR28 0015 7000 0000 0064 5305 13</div>
-          
-        <button type="button" onclick="copyIban('iban2', 'notice2')">IBAN'ı Kopyala</button>
-        <div class="notice" id="notice2">IBAN kopyalandı ✓</div>
-      </div>
-
-        </div>
-        <div class="iban-box">
-        <div class="bank-name">AkBanK</div>
-        <div class="label">Hesap Sahibi</div>
-        <div class="value">ismail koca</div>
-          
-        <div class="label" style="margin-top:12px;">IBAN</div>
-        <div class="iban" id="iban3">TR15 0004 6003 3288 8000 3122 94 </div>
-          
-        <button type="button" onclick="copyIban('iban3', 'notice3')">IBAN'ı Kopyala</button>
-        <div class="notice" id="notice3">IBAN kopyalandı ✓</div>
-      </div>
-
-      <footer class="yanip-son">
-    Bu sayfa sadece bilgilendirme amaçlı kurulmuştur.
-© 1988 İsmail - Tüm Hakları Saklıdır
-</footer>
-
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#0f172a">
+<title>İsmail Koca | Tekno Servis</title>
 <style>
-.yanip-son {
-    animation: yanipSon 1s infinite;
-}
-
-@keyframes yanipSon {
-    0%, 100% {
-        opacity: 1;
-    }
-    50% {
-        opacity: 0;
-    }
-}
+:root{--bg:#0f172a;--card:#111827;--card2:#1f2937;--text:#f8fafc;--muted:#94a3b8;--border:rgba(255,255,255,.1);--accent:#38bdf8;--ok:#22c55e}*{box-sizing:border-box}body{margin:0;min-height:100vh;font-family:Arial,Helvetica,sans-serif;background:radial-gradient(circle at top,#1e3a5f 0,transparent 38%),var(--bg);color:var(--text);display:flex;justify-content:center;padding:24px}.container{width:100%;max-width:520px}.card{background:rgba(17,24,39,.94);border:1px solid var(--border);border-radius:24px;padding:26px;box-shadow:0 20px 60px rgba(0,0,0,.35)}.logo{width:190px;height:190px;border-radius:50%;display:block;margin:0 auto 18px;object-fit:cover;background:#fff;border:4px solid rgba(56,189,248,.55);box-shadow:0 12px 35px rgba(0,0,0,.3)}h1{text-align:center;margin:0;font-size:28px}.sub{text-align:center;color:var(--muted);margin:8px 0 22px}.contact{background:var(--card2);border:1px solid var(--border);border-radius:14px;padding:14px;margin-bottom:10px}.contact a{color:#7dd3fc;text-decoration:none}.action,.social{display:flex;align-items:center;gap:12px;width:100%;padding:14px 15px;border-radius:14px;border:1px solid var(--border);margin:10px 0;text-decoration:none;color:#fff;font-weight:700;transition:.2s}.action:hover,.social:hover{transform:translateY(-2px)}.save{background:rgba(56,189,248,.15);cursor:pointer}.call{background:rgba(34,197,94,.16)}.wa{background:#25D366}.ig{background:linear-gradient(135deg,#833AB4,#C13584 35%,#E1306C 55%,#F56040 75%,#FCAF45)}.x{background:#000}.fb{background:#1877F2}.ico{width:30px;height:30px;display:grid;place-items:center;flex:0 0 30px}.ico svg{width:26px;height:26px;fill:currentColor}.grow{flex:1}.small{font-size:12px;font-weight:400;opacity:.9;margin-top:2px}.title{margin:24px 0 10px;font-size:13px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}.bank{border-radius:14px;padding:16px;margin:12px 0;border:1px solid var(--border);box-shadow:0 8px 22px rgba(0,0,0,.18)}.banktop{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:12px}.bankname{font-size:18px;font-weight:800}.label{font-size:12px;opacity:.85;margin-bottom:4px}.value{font-size:15px}.iban{font:15px/1.6 Consolas,monospace;word-break:break-all}.bank button{width:100%;margin-top:12px;border:0;border-radius:11px;padding:11px 14px;font-weight:800;cursor:pointer}.notice{display:none;text-align:center;margin-top:8px;font-size:12px}.ziraat{background:linear-gradient(180deg,#E30613,#C8101E);color:#fff}.ziraat button,.akbank button{background:#fff;color:#c8101e}.ziraatlogo{width:58px;height:58px;border-radius:12px;background:#fff;padding:6px;object-fit:contain}.enpara{background:#fff;color:#3b185f;border-color:#d7c2df}.enpara button{background:#70287e;color:#fff}.enlogo{display:flex;align-items:center;gap:7px;color:#70287e;font-weight:900;font-size:20px}.enmark{width:38px;height:38px;border-radius:50%;background:#70287e;color:#fff;display:grid;place-items:center;font-size:16px}.akbank{background:linear-gradient(180deg,#ef3340,#cf102d);color:#fff}.aklogo{background:#fff;color:#cf102d;padding:8px 12px;border-radius:9px;font-weight:900;letter-spacing:-1px}.foot{margin-top:22px;color:var(--muted);font-size:12px;text-align:center;line-height:1.5;animation:blink 1s infinite}@keyframes blink{50%{opacity:0}}@media(max-width:480px){.logo{width:165px;height:165px}.card{padding:20px}}
 </style>
-
-    </section>
-  </main>
-
-  <script>
-    function copyIban(ibanId, noticeId) {
-      const iban = document.getElementById(ibanId).innerText.replace(/\s/g, "");
-      navigator.clipboard.writeText(iban).then(() => {
-        const notice = document.getElementById(noticeId);
-        notice.style.display = "block";
-        setTimeout(() => notice.style.display = "none", 1800);
-      });
-    }
-  </script>
-</body>
-</html>
+</head>
+<body>
+<main class="container"><section class="card">
+<img class="logo" src="tekno-servis-logo.jpg" alt="Tekno Servis - Elektronik Cihaz Tamiri logosu">
+<h1>İsmail Koca</h1><div class="sub">Kişisel iletişim ve ödeme bilgilerim</div>
+<div class="contact">📞 Telefon: <a href="tel:+905314940284">0531 494 02 84</a></div>
+<div class="contact">📧 E-posta: <a href="mailto:ismailkocaa@gmail.com">ismailkocaa@gmail.com</a></div>
+<button class="action save" type="button" onclick="saveContact()"><span class="ico">👤</span><span class="grow">Rehbere Kaydet</span></button>
+<a class="action call" href="tel:+905314940284"><span class="ico">📞</span><span class="grow">Ara • 0531 494 02 84</span></a>
+<div class="title">Sosyal Ağlar</div>
+<a class="social wa" href="https://wa.me/905314940284?text=Merhaba%20%C4%B0smail%20Bey" target="_blank" rel="noopener"><span class="ico"><svg viewBox="0 0 24 24"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.16-.17.2-.35.22-.64.07-.3-.15-1.26-.46-2.39-1.47-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.61-.92-2.21-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.21 3.07c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.23 1.36.19 1.87.12.57-.09 1.76-.72 2.01-1.41.25-.69.25-1.29.17-1.41-.07-.12-.27-.2-.57-.35z"/><path d="M12 2C6.48 2 2 6.48 2 12c0 1.76.46 3.48 1.33 5L2 22l5.13-1.35A9.96 9.96 0 0 0 12 22c5.52 0 10-4.48 10-10S17.53 2 12 2zm0 18.18a8.17 8.17 0 0 1-4.17-1.14l-.3-.18-3.05.8.81-2.97-.19-.31A8.17 8.17 0 0 1 3.82 12c0-4.51 3.67-8.18 8.18-8.18S20.18 7.49 20.18 12 16.51 20.18 12 20.18z"/></svg></span><span class="grow">WhatsApp<div class="small">0531 494 02 84 • Mesaj Gönder</div></span><span>›</span></a>
+<a class="social ig" href="https://instagram.com/kocaa.ismail" target="_blank" rel="noopener"><span class="ico"><svg viewBox="0 0 24 24"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7zm5 3a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6zm5.5-3.25a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5z"/></svg></span><span class="grow">Instagram<div class="small">@kocaa.ismail</div></span><span>↗</span></a>
+<a class="social x" href="https://x.com/kocaaismail" target="_blank" rel="noopener"><span class="ico"><svg viewBox="0 0 24 24"><path d="M18.24 2H21l-6.52 7.45L22.15 22h-6.01l-4.7-6.15L6.06 22H3.3l6.85-7.82L2.79 2h6.16l4.25 5.62L18.24 2zm-.96 17.79h1.52L8.12 4.09H6.48l10.8 15.7z"/></svg></span><span class="grow">X<div class="small">@kocaaismail</div></span><span>↗</span></a>
+<a class="social fb" href="https://www.facebook.com/kocaa.ismail" target="_blank" rel="noopener"><span class="ico"><svg viewBox="0 0 24 24"><path d="M13.5 22v-9h3l.5-3.5h-3.5V7.25c0-1.01.28-1.7 1.75-1.7H17V2.41c-.3-.04-1.34-.13-2.55-.13-2.52 0-4.25 1.54-4.25 4.36V9.5H7.35V13h2.85v9h3.3z"/></svg></span><span class="grow">Facebook<div class="small">kocaa.ismail</div></span><span>↗</span></a>
+<div class="title">Banka Bilgileri</div>
+<div class="bank ziraat"><div class="banktop"><div class="bankname">Ziraat Bankası</div><img class="ziraatlogo" src="https://www.ziraatbank.com.tr/PublishingImages/Subpage/bankamiz/BankamizGorselleri/zb_amblem.jpg" alt="Ziraat Bankası logosu"></div><div class="label">Hesap Sahibi</div><div class="value">İsmail Koca</div><div class="label" style="margin-top:12px">IBAN</div><div class="iban" id="iban1">TR24 0001 0021 4347 2099 3350 10</div><button onclick="copyIban('iban1','n1')">IBAN'ı Kopyala</button><div class="notice" id="n1">IBAN kopyalandı ✓</div></div>
+<div class="bank enpara"><div class="banktop"><div class="bankname">Enpara</div><div class="enlogo"><span class="enmark">en</span><span>enpara.com</span></div></div><div class="label">Hesap Sahibi</div><div class="value">İsmail Koca</div><div class="label" style="margin-top:12px">IBAN</div><div class="iban" id="iban2">TR28 0015 7000 0000 0064 5305 13</div><button onclick="copyIban('iban2','n2')">IBAN'ı Kopyala</button><div class="notice" id="n2">IBAN kopyalandı ✓</div></div>
+<div class="bank akbank"><div class="banktop"><div class="bankname">Akbank</div><div class="aklogo">AKBANK</div></div><div class="label">Hesap Sahibi</div><div class="value">İsmail Koca</div><div class="label" style="margin-top:12px">IBAN</div><div class="iban" id="iban3">TR15 0004 6003 3288 8000 0312 294</div><button onclick="copyIban('iban3','n3')">IBAN'ı Kopyala</button><div class="notice" id="n3">IBAN kopyalandı ✓</div></div>
+<footer class="foot">Bu sayfa sadece bilgilendirme amaçlı kurulmuştur.<br>© 1988 İsmail - Tüm Hakları Saklıdır</footer>
+</section></main>
+<script>
+function copyIban(id,n){const v=document.getElementById(id).innerText.replace(/\s/g,'');navigator.clipboard.writeText(v).then(()=>{const e=document.getElementById(n);e.style.display='block';setTimeout(()=>e.style.display='none',1800)})}
+function saveContact(){const v=['BEGIN:VCARD','VERSION:3.0','N:Koca;İsmail;;;','FN:İsmail Koca','TEL;TYPE=CELL:+905314940284','EMAIL;TYPE=INTERNET:ismailkocaa@gmail.com','URL;TYPE=Instagram:https://instagram.com/kocaa.ismail','URL;TYPE=X:https://x.com/kocaaismail','URL;TYPE=Facebook:https://www.facebook.com/kocaa.ismail','END:VCARD'].join('\r\n');const b=new Blob([v],{type:'text/vcard;charset=utf-8'}),u=URL.createObjectURL(b),a=document.createElement('a');a.href=u;a.download='ismail-koca.vcf';document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(u),1000)}
+</script>
+</body></html>
